@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Kopi Kampung | Home</title>
+  <!-- Google Fonts: heading font + body font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+
+  <!-- 1. NAVBAR (same on every page; only the active link changes) -->
+  <nav class="navbar navbar-expand-lg bg-dark sticky-top" data-bs-theme="dark">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="index.html">Kopi Kampung</a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav"
+        aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="mainNav">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">Menu</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="menu-drinks.html">Drinks</a></li>
+              <li><a class="dropdown-item" href="menu-food.html">Food</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- 2. HERO (display heading, lead paragraph, two buttons) -->
+  <header class="bg-body-tertiary py-5">
+    <div class="container py-lg-4">
+      <div class="row justify-content-center">
+        <div class="col-12 col-lg-8 text-center">
+          <p class="text-uppercase small fw-semibold text-body-secondary mb-2">Heritage café · Ipoh, Perak</p>
+          <h1 class="display-5 fw-bold mb-3">Kopi the way Ipoh remembers it</h1>
+          <p class="lead mb-4">Charcoal-roasted beans, kaya toast made every morning, and a quiet corner to stay a
+            while.</p>
+          <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+            <a href="menu-drinks.html" class="btn btn-primary btn-lg px-4">See the menu</a>
+            <button type="button" class="btn btn-outline-primary btn-lg px-4" data-bs-toggle="modal"
+              data-bs-target="#findUsModal">Find us</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- 3. MAIN CONTENT (Class 1 grid, headings fixed to h2 / h3) -->
+  <main class="container my-5">
+    <h2 class="text-center mb-4">Why people keep coming back</h2>
+    <div class="row g-4">
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="card h-100">
+          <img src="images/kopi.jpg" class="card-img-top" alt="Kopi on a marble table">
+          <div class="card-body">
+            <h3 class="card-title h5">Traditional Kopi</h3>
+            <p class="card-text">Freshly roasted beans, brewed the old way.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="card h-100">
+          <img src="images/kopi.jpg" class="card-img-top" alt="Kopi on a marble table">
+          <div class="card-body">
+            <h3 class="card-title h5">Traditional Kopi</h3>
+            <p class="card-text">Freshly roasted beans, brewed the old way.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="card h-100">
+          <img src="images/kopi.jpg" class="card-img-top" alt="Kopi on a marble table">
+          <div class="card-body">
+            <h3 class="card-title h5">Traditional Kopi</h3>
+            <p class="card-text">Freshly roasted beans, brewed the old way.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- CAROUSEL: photos that slide -->
+    <h2 class="text-center mt-5 mb-4">A look inside</h2>
+    <div id="shopCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="2000"></div>>
+    <div class="carousel-inner rounded">
+      <div class="carousel-item active">
+        <img src="images/shopfront.jpg" class="d-block w-100" alt="Kopi Kampung shopfront">
+      </div>
+      <div class="carousel-item">
+        <img src="images/counter.jpg" class="d-block w-100" alt="Front counter">
+      </div>
+      <div class="carousel-item">
+        <img src="images/roaster.jpg" class="d-block w-100" alt="Charcoal roaster">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#shopCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#shopCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+    </div>
+    <!-- TABS: one panel at a time -->
+    <h2 class="text-center mt-5 mb-4">Popular right now</h2>
+    <ul class="nav nav-tabs justify-content-center">
+      <li class="nav-item">
+        <button class="nav-link active" type="button" data-bs-toggle="tab" data-bs-target="#drinks">Drinks</button>
+
+      </li>
+      <li class="nav-item">
+        <button class="nav-link" type="button" data-bs-toggle="tab" data-bs-target="#food">Food</button>
+
+      </li>
+    </ul>
+    <div class="tab-content pt-4 text-center">
+      <div class="tab-pane fade show active" id="drinks">
+        <p>Ipoh white coffee · Kopi O · Teh tarik · Iced Milo</p>
+      </div>
+      <div class="tab-pane fade" id="food">
+        <p>Kaya butter toast · Half-boiled eggs · Nasi lemak</p>
+      </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+    <div class="text-center mt-5">
+      <p class="mb-3">Open daily, 7 am to 6 pm. Closed on Tuesdays.</p>
+      <a href="contact.html" class="btn btn-primary">Get directions</a>
+    </div>
+  </main>
+
+  <!-- 4. FOOTER -->
+  <footer class="bg-dark text-white py-4">
+    <div class="container text-center">
+      <small>© 2026 Kopi Kampung</small>
+    </div>
+  </footer>
+  <!-- 5. MODAL: opens from the Find us button -->
+  <div class="modal fade" id="findUsModal" tabindex="-1" aria-labelledby="findUsTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2 class="modal-title h5" id="findUsTitle">Find us</h2>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p class="mb-1"><b>Ipoh Old Town, Perak</b></p>
+          <p>Open daily, 7 am to 6 pm. Closed on Tuesdays.</p>
+          <a href="contact.html" class="btn btn-primary">Send us a message</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+
+</html>
